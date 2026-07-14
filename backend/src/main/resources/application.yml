@@ -3,9 +3,9 @@ spring:
     name: portfolio-api
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/portfolio
-    username: postgres
-    password: "aslan47123"
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
 
   jpa:
     open-in-view: false
@@ -20,9 +20,9 @@ spring:
     locations: classpath:db/migration
 
 server:
-  port: 8081
+  port: ${PORT:8081}
 
 app:
   jwt:
-    secret: "bXktcG9ydGZvbGlvLWp3dC1zZWNyZXQta2V5LTIwMjYtZm9yLWRldmVsb3BtZW50"
+    secret: ${JWT_SECRET}
     expiration: 3600000
