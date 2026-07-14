@@ -4,6 +4,11 @@ Spring Boot API for the portfolio.
 
 ## Run Locally
 
+Set the required environment variables first:
+
+- `DB_PASSWORD` for the PostgreSQL password
+- `JWT_SECRET` for the base64-encoded JWT signing secret
+
 ```bash
 cd backend
 mvnw.cmd spring-boot:run
