@@ -75,5 +75,5 @@ npm run lint
 
 ## Notes
 
-- Backend configuration lives in `backend/src/main/resources/application.yml`.
-- The frontend README and backend README contain folder-specific details if you need them.
+- Folder-specific notes live in [frontend/README.md](frontend/README.md) and [backend/README.md](backend/README.md).
+- Backend configuration lives in [backend/src/main/resources/application.yml](backend/src/main/resources/application.yml).
